@@ -1,6 +1,6 @@
 import React from 'react';
-import Qode from '../../assets/aside/h2-client-1.svg';
-import slide from '../../assets/aside/00_preview.__large_preview (1).jpg';
+import Qode from '../../../public/assets/aside/h2-client-1.svg';
+import slide from '../../../public/assets/aside/00_preview.__large_preview (1).jpg';
 
 
 function ToolBar() {
