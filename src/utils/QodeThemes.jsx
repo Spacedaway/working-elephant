@@ -1,108 +1,92 @@
-import slide1 from '../assets/aside/00_preview.__large_preview (1).jpg';
-import slide2 from '../assets/aside/00_preview.__large_preview (1).png';
-import slide3 from '../assets/aside/00_preview.__large_preview (2).jpg';
-import slide4 from '../assets/aside/00_preview.__large_preview (2).png';
-import slide5 from '../assets/aside/00_preview.__large_preview (3).png';
-import slide6 from '../assets/aside/00_preview.__large_preview (4).png';
-import slide7 from '../assets/aside/00_preview.__large_preview (5).png';
-import slide8 from '../assets/aside/00_preview.__large_preview (6).png';
-import slide9 from '../assets/aside/00_preview.__large_preview (7).png';
-import slide10 from '../assets/aside/00_preview.__large_preview (8).png';
-import slide11 from '../assets/aside/00_preview.__large_preview (9).png';
-import slide12 from '../assets/aside/00_preview.__large_preview (10).png';
-import slide13 from '../assets/aside/00_preview.__large_preview (11).png';
-import slide14 from '../assets/aside/00_preview.__large_preview (12).png';
-import slide15 from '../assets/aside/00_preview.__large_preview (13).png';
-
 export const themes = [
 	{
 		name: 'Becca',
 		category: 'Technology',
 		price: '$85',
-		url: { slide1 },
+		url: '../assets/aside/00_preview.__large_preview (1).jpg',
 	},
 	{
 		name: 'Hawat',
 		category: 'Technology',
 		price: '$85',
-		url: { slide2 },
+		url: '../assets/aside/00_preview.__large_preview (1).png',
 	},
 	{
 		name: 'Otaru',
 		category: 'Technology',
 		price: '$85',
-		url: { slide3 },
+		url: '../assets/aside/00_preview.__large_preview (2).jpg',
 	},
 	{
 		name: 'Deon',
 		category: 'Technology',
 		price: '$85',
-		url: { slide4 },
+		url: '../assets/aside/00_preview.__large_preview (2).png',
 	},
 	{
 		name: 'Cyberdom',
 		category: 'Technology',
 		price: '$85',
-		url: { slide5 },
+		url: '../assets/aside/00_preview.__large_preview (3).png',
 	},
 	{
 		name: 'Join Up',
 		category: 'Technology',
 		price: '$85',
-		url: { slide6 },
+		url: '../assets/aside/00_preview.__large_preview (4).png',
 	},
 	{
 		name: 'TechLink',
 		category: 'Technology',
 		price: '$85',
-		url: { slide7 },
+		url: '../assets/aside/00_preview.__large_preview (5).png',
 	},
 	{
 		name: 'WebOn',
 		category: 'Technology',
 		price: '$85',
-		url: { slide8 },
+		url: '../assets/aside/00_preview.__large_preview (6).png',
 	},
 	{
 		name: 'CleverSoft',
 		category: 'Technology',
 		price: '$85',
-		url: { slide9 },
+		url: '../assets/aside/00_preview.__large_preview (7).png',
 	},
 	{
 		name: 'BitPal',
 		category: 'Technology',
 		price: '$85',
-		url: { slide10 },
+		url: '../assets/aside/00_preview.__large_preview (8).png',
 	},
 	{
 		name: 'Foton',
 		category: 'Technology',
 		price: '$85',
-		url: { slide11 },
+		url: '../assets/aside/00_preview.__large_preview (9).png',
 	},
 	{
 		name: 'Sceon',
 		category: 'Technology',
 		price: '$85',
-		url: { slide12 },
+		url: '../assets/aside/00_preview.__large_preview (10).png',
 	},
 	{
 		name: 'Synergia',
 		category: 'Technology',
 		price: '$85',
-		url: { slide13 },
+		url: '../assets/aside/00_preview.__large_preview (11).png',
 	},
 	{
 		name: 'Sparks',
 		category: 'Technology',
 		price: '$85',
-		url: { slide14 },
+		url: '../assets/aside/00_preview.__large_preview (12).png',
 	},
 	{
 		name: 'Fluid',
 		category: 'Technology',
 		price: '$85',
-		url: { slide15 },
+		url: '../assets/aside/00_preview.__large_preview (13).png',
 	},
 ];

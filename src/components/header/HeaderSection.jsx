@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
 import ImageSlider from './slides/ImageSlider';
 import ToolBar from './ToolBar';
 
 function HeaderSection() {
+	const [isToggled, setIsToggled] = useState(false);
+
+	const handleToggle = () => {
+		setIsToggled(!isToggled);
+	};
+
 	return (
 		<header>
 			<Navbar />
-			<ImageSlider/>
-			<ToolBar/>
+			<ImageSlider />
+			<ToolBar isToggled={isToggled} handleToggle={handleToggle} />
 		</header>
 	);
 }

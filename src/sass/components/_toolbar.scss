@@ -1,11 +1,10 @@
 @use '../abstracts/' as *;
 
-.toolbar{
-    position: fixed;
+.toolbar {
+	position: fixed;
 	top: 0;
-	right: 0;
+	right: -282px;
 	z-index: 999;
-	overflow-y: auto;
 
 	display: flex;
 	flex-direction: column;
@@ -16,8 +15,88 @@
 	min-height: 100%;
 
 	background-color: $color-neutral-000;
-	padding-inline: $size-4;
-    padding-top: $size-2;
+	padding-top: $size-2;
 	transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 
+	&[data-toggled='true'] {
+		right: 0;
+	}
+
+	&--toggle {
+		position: absolute;
+		right: 100%;
+
+		padding: $size-2;
+		font-size: $size-2 * 1.25;
+		cursor: pointer;
+
+
+		&__btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: $size-2;
+
+			top: 25%;
+			width: max-content;
+			background-color: $color-accent-900;
+		}
+
+		&__buy-now {
+			display: inline-flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: $size-2;
+
+			top: 35%;
+			width: max-content;
+			background-color: $color-neutral-000;
+		}
+	}
+
+	&--box {
+		position: relative;
+		overflow-y: auto;
+		z-index: 669;
+		height: 100%;
+
+		padding-inline: $size-6 $size-4;
+
+		&::-webkit-scrollbar {
+			color: transparent;
+		}
+	}
+
+	&--header {
+		display: flex;
+		align-items: center;
+		gap: $size-4;
+	}
+
+	&--cards {
+		&--category {
+			font-size: $size-2 * 1.25;
+			color: $color-neutral-300;
+		}
+
+		&--details {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	&-btn {
+		display: flex;
+		align-self: stretch;
+		justify-content: center;
+		align-items: center;
+		margin-top: auto;
+
+		padding-block: $size-3;
+		background-color: $color-accent-900;
+		color: $color-neutral-000;
+		font-size: $size-2 * 1.25;
+		text-decoration: none;
+	}
 }
