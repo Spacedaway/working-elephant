@@ -13,6 +13,18 @@
 		background-color: $color-accent-400;
 	}
 
+	&[data-scroll='true'] {
+		@include mq(large) {
+			background-color: $color-primary-400;
+		}
+	}
+
+	&[data-scroll='true'] > span {
+		@include mq(large) {
+			background-color: $color-neutral-000;
+		}
+	}
+
 	&--bar {
 		position: absolute;
 		width: 50%;
@@ -32,15 +44,18 @@
 		}
 	}
 
-	&[data-visible='true'] &--bar__1, &:is(:hover, :focus) &--bar__1 {
+	&[data-visible='true'] &--bar__1,
+	&:is(:hover, :focus) &--bar__1 {
 		width: 30%;
 	}
 
-	&[data-visible='true'] &--bar__2, &:is(:hover, :focus) &--bar__2 {
+	&[data-visible='true'] &--bar__2,
+	&:is(:hover, :focus) &--bar__2 {
 		width: 20%;
 	}
 
-	&[data-visible='true'] &--bar__3, &:is(:hover, :focus) &--bar__3 {
+	&[data-visible='true'] &--bar__3,
+	&:is(:hover, :focus) &--bar__3 {
 		width: 40%;
 	}
 

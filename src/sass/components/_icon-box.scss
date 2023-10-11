@@ -23,6 +23,12 @@
 			position: relative;
 			padding-block: $size-9;
 
+			&[data-scroll = 'true']{
+				@include mq(large){
+					display: none;
+				}
+			}
+
 			&__count {
 				display: flex;
 				justify-content: center;
@@ -66,5 +72,13 @@
             opacity: 1;
             visibility: visible;
         }
+
+		&__search{
+			&[data-scroll = 'true']{
+				@include mq(large){
+					color: $color-primary-400;
+				}
+			}
+		}
 	}
 }

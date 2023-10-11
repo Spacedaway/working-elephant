@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 header {
+	position: relative;
 	height: 120vh;
 	height: 120svh;
 }
@@ -11,6 +12,9 @@ header {
 	left: 0;
 	z-index: 10;
 	width: 100%;
+	height: 100px;
+	
+	display: flex;
 
 	background-color: transparent;
 
@@ -45,6 +49,24 @@ header {
 			&__mobile {
 				display: none;
 			}
+		}
+
+		&[data-scroll='true'] &__regular {
+			@include mq(large) {
+				display: none;
+			}
+		}
+
+		&[data-scroll='true'] &__mobile {
+			@include mq(large) {
+				display: block;
+			}
+		}
+	}
+
+	&[data-scroll='true'] {
+		@include mq(large) {
+			background-color: white;
 		}
 	}
 }

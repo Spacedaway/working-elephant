@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import ImageSlider from './slides/ImageSlider';
 import ToolBar from './ToolBar';
+import KickStarter from '../KickStarter';
 
 function HeaderSection() {
 	const [isToggled, setIsToggled] = useState(false);
@@ -15,6 +16,7 @@ function HeaderSection() {
 			<Navbar />
 			<ImageSlider />
 			<ToolBar isToggled={isToggled} handleToggle={handleToggle} />
+			<KickStarter/>
 		</header>
 	);
 }

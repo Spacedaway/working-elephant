@@ -159,6 +159,12 @@
 
 		& > a {
 			padding-right: $size-8;
+
+			&[data-scroll='true']{
+				@include mq(large){
+					color: $color-primary-400;
+				}
+			}
 		}
 	}
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import useScreenSize from '../../hooks/useScreenSize';
 
@@ -13,6 +13,23 @@ function Navbar() {
 	const [isVisible, setIsVisible] = useState(false);
 	const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 	const [screenSize] = useScreenSize();
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 100) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
 
 	const toggleNav = () => {
 		if (screenSize.width <= 1040) {
@@ -28,12 +45,12 @@ function Navbar() {
 	};
 
 	return (
-		<div className='site-header'>
+		<div className='site-header' data-scroll={scrolled ? 'true' : 'false'}>
 			<div className='site-header__inner'>
-				<LogoBox />
-				<Navigation styles={toggleStyle} />
-				<IconBox />
-				<ToggleButton visible={isVisible} toggleNav={toggleNav} />
+				<LogoBox isScrolled={scrolled}/>
+				<Navigation styles={toggleStyle} isScrolled={scrolled}/>
+				<IconBox isScrolled={scrolled}/>
+				<ToggleButton visible={isVisible} toggleNav={toggleNav} isScrolled={scrolled}/>
 				<SideBar visible={isSidebarVisible} toggleNav={toggleNav} />
 			</div>
 		</div>

@@ -3,7 +3,7 @@ import { BiSolidChevronRight } from 'react-icons/bi';
 
 import { navMenu } from '../../utils/NavMenuItems';
 
-function Navigation({ styles }) {
+function Navigation({ styles, isScrolled }) {
 	const [activeItems, setActiveItems] = useState({});
 
 	const handleClick = (index, subIndex = null, subSubMenuIndex = null) => {
@@ -40,7 +40,7 @@ function Navigation({ styles }) {
 						onClick={() => handleClick(index)}
 						data-active={activeItems[index] ? 'true' : 'false'}
 					>
-						<a href='#'>
+						<a href='#' data-scroll={isScrolled ? 'true' : 'false'}>
 							<span>{item.name}</span>
 						</a>
 						<BiSolidChevronRight className='menu-arrow' />

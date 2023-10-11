@@ -1,9 +1,9 @@
 import logoWHITE from '../../assets/logo-WHITE.png';
 import logoBLUE from '../../assets/logo-Blue.png';
 
-const LogoBox = () => {
+const LogoBox = ({isScrolled}) => {
 	return (
-		<div className='site-header--logo'>
+		<div className='site-header--logo' data-scroll={isScrolled ? 'true' : 'false'}>
 			<img
 				src={logoWHITE}
 				className='site-header--logo__regular'
