@@ -1,18 +1,18 @@
-import slide1 from '/public/assets/aside/00_preview.__large_preview (1).jpg';
-import slide2 from '/public/assets/aside/00_preview.__large_preview (1).png';
-import slide3 from '/public/assets/aside/00_preview.__large_preview (2).jpg';
-import slide4 from '/public/assets/aside/00_preview.__large_preview (2).png';
-import slide5 from '/public/assets/aside/00_preview.__large_preview (3).png';
-import slide6 from '/public/assets/aside/00_preview.__large_preview (4).png';
-import slide7 from '/public/assets/aside/00_preview.__large_preview (5).png';
-import slide8 from '/public/assets/aside/00_preview.__large_preview (6).png';
-import slide9 from '/public/assets/aside/00_preview.__large_preview (7).png';
-import slide10 from '/public/assets/aside/00_preview.__large_preview (8).png';
-import slide11 from '/public/assets/aside/00_preview.__large_preview (9).png';
-import slide12 from '/public/assets/aside/00_preview.__large_preview (10).png';
-import slide13 from '/public/assets/aside/00_preview.__large_preview (11).png';
-import slide14 from '/public/assets/aside/00_preview.__large_preview (12).png';
-import slide15 from '/public/assets/aside/00_preview.__large_preview (13).png';
+import slide1 from '../assets/aside/00_preview.__large_preview (1).jpg';
+import slide2 from '../assets/aside/00_preview.__large_preview (1).png';
+import slide3 from '../assets/aside/00_preview.__large_preview (2).jpg';
+import slide4 from '../assets/aside/00_preview.__large_preview (2).png';
+import slide5 from '../assets/aside/00_preview.__large_preview (3).png';
+import slide6 from '../assets/aside/00_preview.__large_preview (4).png';
+import slide7 from '../assets/aside/00_preview.__large_preview (5).png';
+import slide8 from '../assets/aside/00_preview.__large_preview (6).png';
+import slide9 from '../assets/aside/00_preview.__large_preview (7).png';
+import slide10 from '../assets/aside/00_preview.__large_preview (8).png';
+import slide11 from '../assets/aside/00_preview.__large_preview (9).png';
+import slide12 from '../assets/aside/00_preview.__large_preview (10).png';
+import slide13 from '../assets/aside/00_preview.__large_preview (11).png';
+import slide14 from '../assets/aside/00_preview.__large_preview (12).png';
+import slide15 from '../assets/aside/00_preview.__large_preview (13).png';
 
 export const themes = [
 	{

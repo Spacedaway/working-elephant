@@ -1,5 +1,5 @@
-import logoWHITE from '/public/assets/logo-WHITE.png';
-import logoBLUE from '/public/assets/logo-Blue.png';
+import logoWHITE from '../../assets/logo-WHITE.png';
+import logoBLUE from '../../assets/logo-Blue.png';
 
 const LogoBox = () => {
 	return (
