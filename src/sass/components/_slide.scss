@@ -1,0 +1,84 @@
+@use '../abstracts/' as *;
+
+.slide {
+	&--title {
+		position: relative;
+
+		font-size: $font-size-200;
+		color: $color-accent-400;
+		text-transform: uppercase;
+
+		@include animation(fadeInScale) {
+			animation-duration: 5s;
+		}
+		& span {
+			content: '01';
+			position: absolute;
+			top: -400%;
+			left: -25%;
+
+			font-size: $size-14;
+			color: rgba(#999999, 0.3);
+		}
+	}
+
+	&--heading {
+		font-size: $font-size-700;
+		color: $color-neutral-000;
+		font-weight: $font-weight-bold;
+		margin-bottom: 0.5em;
+		max-width: 10ch;
+
+		@include animation(moveInRight) {
+			animation-duration: 1s;
+		}
+
+		& span {
+			color: $color-accent-400;
+			@include animation(fadeInScale) {
+				animation-duration: 2s;
+			}
+		}
+
+		@include mq(small) {
+			max-width: 20ch;
+			font-size: $font-size-900;
+		}
+	}
+
+	&--text {
+		font-size: $font-size-500;
+		color: $color-neutral-200;
+		margin-bottom: 0.5em;
+		text-transform: capitalize;
+
+		@include animation(fadeInScale) {
+			animation-duration: 3s;
+		}
+
+		@include mq(small) {
+			max-width: 45ch;
+			font-size: $font-size-600;
+		}
+	}
+
+	&--buttons {
+		display: flex;
+		flex-direction: column;
+		gap: $size-2;
+		width: 60%;
+		transform-origin: left;
+
+		@include animation(fadeInScale) {
+			animation-duration: 4s;
+		}
+
+		@include mq(medium) {
+			flex-direction: row;
+			width: auto;
+			a {
+				padding: 1.5em 3em;
+			}
+		}
+	}
+}

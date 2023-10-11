@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	z-index: 99;
+	overflow-y: auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 450px;
+	height: 100%;
+	min-height: 100%;
+
+	background-color: $color-neutral-000;
+	padding-inline: $size-8;
+	transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+
+    &[data-open='true'] {
+        right: 0;
+    }
+
+	&--close-btn {
+		transform: rotate(0);
+		transition: all 0.5s;
+
+		margin: $size-8 0 0 auto;
+		background-color: $color-primary-400;
+		border: 0;
+		border-radius: 50%;
+		padding: $size-2 $size-4;
+		cursor: pointer;
+		font-size: $size-5;
+		color: $color-neutral-000;
+
+		&:is(:hover, :focus) {
+			transform: rotate(360deg);
+		}
+	}
+
+	&--downloads {
+		display: flex;
+	}
+}

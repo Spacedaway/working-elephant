@@ -1,0 +1,54 @@
+@use '../abstracts/' as *;
+
+.toggle {
+	position: relative;
+	padding: $size-5;
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+	border: none;
+	cursor: pointer;
+	background-color: $color-neutral-000;
+
+	& > span {
+		background-color: $color-accent-400;
+	}
+
+	&--bar {
+		position: absolute;
+		width: 50%;
+		height: 2px;
+		transition: width 0.3s ease;
+		&__1 {
+			top: 65%;
+			left: 25%;
+		}
+		&__2 {
+			top: 50%;
+			left: 25%;
+		}
+		&__3 {
+			top: 35%;
+			left: 25%;
+		}
+	}
+
+	&[data-visible='true'] &--bar__1, &:is(:hover, :focus) &--bar__1 {
+		width: 30%;
+	}
+
+	&[data-visible='true'] &--bar__2, &:is(:hover, :focus) &--bar__2 {
+		width: 20%;
+	}
+
+	&[data-visible='true'] &--bar__3, &:is(:hover, :focus) &--bar__3 {
+		width: 40%;
+	}
+
+	@include xmq(large) {
+		background-color: $color-primary-400;
+
+		& > span {
+			background-color: $color-neutral-000;
+		}
+	}
+}

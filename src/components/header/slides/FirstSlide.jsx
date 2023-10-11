@@ -1,0 +1,22 @@
+import React from 'react';
+
+function FirstSlide() {
+	return (
+		<div className='image-slider--sliders'>
+			<span className='slide--title'>ceo engineer <span>01</span></span>
+			<h1 className='slide--heading'>
+				Teamwork is your key to <span>success</span>
+			</h1>
+			<p className='slide--text'>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugit
+				libero eaque. Cum, deserunt.
+			</p>
+			<div className='slide--buttons'>
+				<a href='#' className='button' data-type='primary'>Get Softwerk</a>
+				<a href='#' className='button' data-type='accent'>Read More</a>
+			</div>
+		</div>
+	);
+}
+
+export default FirstSlide;

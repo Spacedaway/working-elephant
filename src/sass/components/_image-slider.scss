@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+
+.image-slider {
+	position: relative;
+
+	height: inherit;
+	background-image: url('../../assets/background.jpg');
+	background-size: contain;
+	background-position: center;
+
+	&--arrow {
+		position: absolute;
+		top: 50%;
+		color: $color-neutral-000;
+		font-size: $size-9;
+		cursor: pointer;
+
+		&__left {
+			left: 5%;
+
+			@include mq(large) {
+				left: 2%;
+			}
+		}
+
+		&__right {
+			right: 5%;
+		}
+
+		@include xmq(small) {
+			display: none;
+		}
+	}
+
+	&--sliders {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: max(300px, 80%);
+
+		@include mq(large) {
+			left: 10%;
+			transform: none;
+		}
+	}
+}

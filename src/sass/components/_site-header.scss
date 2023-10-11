@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+
+header {
+	height: 120vh;
+	height: 120svh;
+}
+
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+
+	background-color: transparent;
+
+	@include xmq(large) {
+		background-color: $color-neutral-000;
+		padding-block: $size-4;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: $size-6;
+
+		width: min(100% - 5rem, 85rem);
+		margin-inline: auto;
+
+		@include xmq(large) {
+			width: min(100% - 3.5rem, 85rem);
+		}
+	}
+
+	&--logo {
+		&__regular {
+			display: none;
+		}
+
+		@include mq(large) {
+			&__regular {
+				display: block;
+			}
+			&__mobile {
+				display: none;
+			}
+		}
+	}
+}
