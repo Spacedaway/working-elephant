@@ -23,34 +23,37 @@
 	}
 
 	&--toggle {
-		position: absolute;
-		right: 100%;
 
-		padding: $size-2;
-		font-size: $size-2 * 1.25;
-		cursor: pointer;
-
-
-		&__btn {
-			display: inline-flex;
-			align-items: center;
-			justify-content: space-between;
-			gap: $size-2;
-
-			top: 25%;
-			width: max-content;
-			background-color: $color-accent-900;
-		}
-
-		&__buy-now {
-			display: inline-flex;
-			align-items: center;
-			justify-content: space-between;
-			gap: $size-2;
-
-			top: 35%;
-			width: max-content;
-			background-color: $color-neutral-000;
+		@include mq(medium){
+			position: absolute;
+			right: 100%;
+	
+			padding: $size-2;
+			font-size: $size-2 * 1.25;
+			cursor: pointer;
+	
+	
+			&__btn {
+				display: inline-flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: $size-2;
+	
+				top: 25%;
+				width: max-content;
+				background-color: $color-accent-900;
+			}
+	
+			&__buy-now {
+				display: inline-flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: $size-2;
+	
+				top: 35%;
+				width: max-content;
+				background-color: $color-neutral-000;
+			}
 		}
 	}
 
