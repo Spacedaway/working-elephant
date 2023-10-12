@@ -4,12 +4,6 @@
 	top: 82%;
 	left: 50%;
 	transform: translateX(-50%);
-
-	&--img-1 {
-        border-radius: 1rem 0 0 1rem;
-    }
-
-    &--img-2 {
-        border-radius: 0 1rem 1rem 0;
-    }
+	overflow: hidden;
+	border-radius: 1rem;
 }
