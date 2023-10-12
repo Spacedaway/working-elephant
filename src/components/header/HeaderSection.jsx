@@ -4,7 +4,7 @@ import ImageSlider from './slides/ImageSlider';
 import ToolBar from './ToolBar';
 import KickStarter from '../KickStarter';
 
-function Index() {
+function HeaderSection() {
 	const [isToggled, setIsToggled] = useState(false);
 
 	const handleToggle = () => {
@@ -21,4 +21,4 @@ function Index() {
 	);
 }
 
-export default Index;
+export default HeaderSection;
