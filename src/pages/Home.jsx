@@ -1,9 +1,9 @@
-import HeaderSection from "../components/header/HeaderSection";
+import Index from "../components/header/Index";
 
 function Home() {
 	return (
 		<>
-			<HeaderSection/>
+			<Index/>
 		</>
 	);
 }
