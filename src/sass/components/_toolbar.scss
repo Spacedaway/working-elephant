@@ -22,11 +22,20 @@
 		right: 0;
 	}
 
+	&[data-toggled='true'] &--toggle {
+		@include mq(medium){
+			width: max-content;
+			padding: $size-3;
+		}
+	}
+
 	&--toggle {
 
 		@include mq(medium){
 			position: absolute;
 			right: 100%;
+			width: 115px;
+			height: 42px;
 	
 			padding: $size-2;
 			font-size: $size-2 * 1.25;
@@ -36,22 +45,18 @@
 			&__btn {
 				display: inline-flex;
 				align-items: center;
-				justify-content: space-between;
 				gap: $size-2;
 	
-				top: 25%;
-				width: max-content;
+				top: 20%;
 				background-color: $color-accent-900;
 			}
 	
 			&__buy-now {
 				display: inline-flex;
 				align-items: center;
-				justify-content: space-between;
 				gap: $size-2;
 	
-				top: 35%;
-				width: max-content;
+				top: 28%;
 				background-color: $color-neutral-000;
 			}
 		}
