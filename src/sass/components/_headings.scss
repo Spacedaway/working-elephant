@@ -3,7 +3,8 @@
 .heading-1 {
   @include heading(
     $heading-1-font-size,
-    $heading-1-color
+    $heading-1-color,
+    $heading-1-transform
   );
 }
 .heading-2 {
