@@ -3,8 +3,8 @@ import React from 'react';
 function FirstSlide() {
 	return (
 		<div className='image-slider--sliders'>
-			<span className='slide--title'>ceo engineer <span>01</span></span>
-			<h1 className='slide--heading'>
+			<span className='slide--title | heading-9'>ceo engineer <span>01</span></span>
+			<h1 className='slide--heading | heading-1'>
 				Teamwork is your key to <span>success</span>
 			</h1>
 			<p className='slide--text'>

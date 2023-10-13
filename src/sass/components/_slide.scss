@@ -4,10 +4,6 @@
 	&--title {
 		position: relative;
 
-		font-size: $font-size-200;
-		color: $color-accent-400;
-		text-transform: uppercase;
-
 		@include animation(fadeInScale) {
 			animation-duration: 5s;
 		}
@@ -23,11 +19,9 @@
 	}
 
 	&--heading {
-		font-size: $font-size-700;
-		color: $color-neutral-000;
-		font-weight: $font-weight-bold;
 		margin-bottom: 0.5em;
 		max-width: 10ch;
+		text-transform: capitalize;
 
 		@include animation(moveInRight) {
 			animation-duration: 1s;

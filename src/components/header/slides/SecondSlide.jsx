@@ -3,8 +3,8 @@ import React from 'react';
 function SecondSlide() {
 	return (
 		<div className='image-slider--sliders'>
-			<span className='slide--title'>ceo engineer <span>02</span></span>
-			<h1 className='slide--heading'>
+			<span className='slide--title | heading-9'>ceo engineer <span>02</span></span>
+			<h1 className='slide--heading | heading-1'>
 				Creating amazing projects in no <span>time</span>
 			</h1>
 			<p className='slide--text'>
