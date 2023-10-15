@@ -1,35 +1,54 @@
 @use '../abstracts/' as *;
 
 .ideas {
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
+
+	display: grid;
+	gap: var(--grid-gap, $grid-gap);
+
+	@include mq(large) {
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
+	}
+
+	&--container {
+		@include mq(large) {
+			margin-top: $size-12;
+		}
+	}
 
 	&--content {
 		height: $size-1;
 		background-color: $color-primary-400;
-		
-        &--holder {
+
+		&--holder {
 			height: $size-1;
 			width: 100%;
 
 			background-color: $color-neutral-100;
 		}
 
-        &--describe{
-            display: flex;
-            justify-content: space-between;
-        }
+		&--describe {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 
-    &--img{
-        position: relative;
-        top: 150px;
-        left: 0;
-        transform: scale(1.6);
-        &--box{
-            position: relative;
-            height: 500px;
-            overflow: hidden;
-        }
-    }
+	&--img {
+		position: relative;
+		top: 150px;
+		left: 0;
+		transform: scale(1.6);
+
+		@include xmq(medium) {
+			transform: none;
+		}
+
+		&--box {
+			position: relative;
+			height: 500px;
+			overflow: hidden;
+		}
+	}
 }

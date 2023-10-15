@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.middle-block {
+	display: none;
+	--grid-gap: 0;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translateX(-50%);
+	overflow: hidden;
+	border-radius: $size-4;
+	
+	@include xmq(medium) {
+		top: 77%;
+		width: min(400px, 100%) !important;
+	}
+}

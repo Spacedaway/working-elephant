@@ -2,8 +2,13 @@
 
 header {
 	position: relative;
-	height: 150vh;
-	height: 150svh;
+	height: 100vh;
+	height: 100svh;
+
+	@include mq(medium) {
+		height: 150vh;
+		height: 150svh;
+	}
 }
 
 .site-header {
@@ -13,7 +18,7 @@ header {
 	z-index: 10;
 	width: 100%;
 	height: 100px;
-	
+
 	display: flex;
 
 	background-color: transparent;

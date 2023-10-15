@@ -7,10 +7,10 @@ import IdeaBox from './IdeaBox';
 function GenerateIdeas() {
 	return (
 		<div
-			className='ideas | container even-columns | padding-block-start-13 padding-block-end-4'
+			className='ideas | container | padding-block-start-13 padding-block-end-4'
 			style={{ '--grid-gap': '2rem' }}
 		>
-			<div className='flow | margin-block-start-12'>
+			<div className='ideas--container | flow'>
 				<h1 className='heading-9'>CEO ENGINEER</h1>
 				<h1 className='heading-1 | clr-primary-400 fs-800'>
 					How to generate <br /> creative{' '}
