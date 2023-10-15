@@ -11,7 +11,6 @@ function AmazingFuture() {
                 <p className='clr-neutral-500 fs-600'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                 <a data-type='accent' href="" className="button |">Read More</a>
             </div>
-
 		</div>
 	);
 }

@@ -1,17 +1,45 @@
 @use '../abstracts/' as *;
 
 .middle-block {
-	display: none;
+	--max-width: #{$container-max-width-narrow};
 	--grid-gap: 0;
+
 	position: absolute;
 	top: 85%;
 	left: 50%;
 	transform: translateX(-50%);
 	overflow: hidden;
 	border-radius: $size-4;
-	
-	@include xmq(medium) {
-		top: 77%;
-		width: min(400px, 100%) !important;
+
+	&[data-block='ideas'] {
+		top: 75%;
+
+		@include mq(medium) {
+			top: 60%;
+			grid-auto-flow: row !important;
+			grid-auto-columns: auto !important;
+		}
+
+		@include mq(large) {
+			--max-width: #{$container-max-width} !important;
+			grid-auto-flow: column !important;
+			grid-auto-columns: 1fr !important;
+		}
+	}
+
+	& .mission {
+		text-align: left;
+		background-color: $color-neutral-000;
+
+		&--count {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+
+			@include mq(medium) {
+				flex-direction: row;
+				justify-content: center;
+			}
+		}
 	}
 }

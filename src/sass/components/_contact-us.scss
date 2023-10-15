@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+.contact-us {
+	--flow-spacer: 1rem;
+	position: relative;
+
+	padding-block: 7rem 20rem;
+	background-image: url('../../../public/assets/h3-img-4.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+
+	&--form {
+		& input {
+			cursor: pointer;
+
+			&:focus {
+				&::placeholder {
+					color: $color-primary-400;
+				}
+			}
+
+			@include mq(medium) {
+				width: 50%;
+			}
+
+            @include mq(large) {
+				width: 40%;
+			}
+		}
+
+		& button {
+            padding: $size-5 $size-10;
+			@include mq(medium) {
+				margin-left: -100px;
+			}
+		}
+	}
+}
