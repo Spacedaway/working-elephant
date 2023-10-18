@@ -1,0 +1,112 @@
+@use '../abstracts/' as *;
+
+.team-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: $size-4;
+
+	position: relative;
+	z-index: 4;
+
+	&--image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 175px;
+		height: 175px;
+		z-index: 6;
+
+		background-color: $color-neutral-000;
+		border: 3px solid currentColor;
+		transition: all 0.5s ease;
+
+		& img {
+			width: 150px;
+			height: 150px;
+			filter: grayscale(1);
+			transition: all 0.5s ease;
+		}
+
+		&--background {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			position: relative;
+			z-index: 4;
+			width: 200px;
+			height: 200px;
+
+			color: $color-primary-400;
+
+			&::before {
+				content: '';
+				position: absolute;
+				right: 20px;
+				top: 10px;
+
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				z-index: 1;
+
+				background-color: currentColor;
+				transition: all 0.5s ease;
+			}
+
+			&[data-ellipse='large']::before {
+				content: '';
+				position: absolute;
+				left: -5px;
+				top: 100px;
+
+				width: 86px;
+				height: 86px;
+				border-radius: 50%;
+				z-index: 1;
+
+				background-color: currentColor;
+				transition: all 0.5s ease;
+			}
+		}
+	}
+
+	&--socials {
+		display: flex;
+		gap: $size-4;
+
+		font-size: $font-size-600;
+		opacity: 0;
+		visibility: hidden;
+
+		transition: all 0.5s ease;
+	}
+
+	&:is(:hover, :focus) &--image--background,
+	&:is(:hover, :focus) &--socials {
+		color: $color-accent-400;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&:is(:hover, :focus) img {
+		filter: grayscale(0);
+	}
+}
+
+.team {
+	padding-block: 45rem 7rem;
+
+	@include mq(large) {
+		padding-block: 15rem 7rem;
+	}
+
+	&--container {
+		@include mq(large) {
+			--auto-grid-min-size: 200px;
+			--grid-gap: $size-6;
+		}
+	}
+}
