@@ -1,0 +1,93 @@
+@use '../abstracts/' as *;
+
+.news-socials {
+	&--container {
+		@include mq(large) {
+			--auto-grid-min-size: 200px;
+			--grid-gap: $size-6;
+		}
+	}
+}
+
+.footer-col {
+	&--socials {
+		display: flex;
+		gap: $size-2;
+
+		& > a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			padding: $size-2;
+			border-radius: 50%;
+			aspect-ratio: 1;
+			color: $color-primary-400;
+			background-color: $color-neutral-000;
+
+			&:is(:hover, :focus) {
+				color: $color-accent-400;
+			}
+		}
+	}
+
+	&--contact {
+		display: flex;
+		flex-direction: column;
+		gap: $size-2;
+
+		& > a {
+			display: flex;
+			align-items: center;
+			gap: $size-2;
+
+			font-size: $font-size-500;
+			cursor: pointer;
+
+			& svg {
+				color: $color-accent-400;
+			}
+
+			&:is(:hover, :focus) {
+				color: $color-accent-400;
+			}
+		}
+	}
+
+	&--form {
+		&--container {
+			position: relative;
+		}
+
+		& input {
+			position: relative;
+			width: 100%;
+			margin: 0 0 20px;
+			padding: 13px 26px;
+			cursor: pointer;
+
+			&:focus {
+				&::placeholder {
+					color: $color-primary-400;
+				}
+			}
+		}
+
+		& button {
+			position: absolute;
+			top: -2.5px;
+
+			padding: $size-5;
+			margin-left: -50px;
+			margin-top: 3px;
+			border-radius: 50%;
+		}
+	}
+}
+
+.copyright a {
+	text-decoration: none;
+	&:is(:hover, :focus) {
+		color: $color-accent-400;
+	}
+}

@@ -12,7 +12,7 @@ function HeaderSection() {
 	};
 
 	return (
-		<header>
+		<header id='header'>
 			<Navbar />
 			<ImageSlider />
 			<ToolBar isToggled={isToggled} handleToggle={handleToggle} />

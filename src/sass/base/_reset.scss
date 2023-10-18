@@ -8,6 +8,11 @@
 	// outline: 1px yellow solid;
 }
 
+/* Set core root defaults */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Prevent font size inflation */
 html {
 	-moz-text-size-adjust: none;

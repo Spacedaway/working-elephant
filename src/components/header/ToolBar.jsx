@@ -3,16 +3,19 @@ import { BsArrow90DegUp } from 'react-icons/bs';
 import { BsArrowRight } from 'react-icons/bs';
 import { BiSolidCart } from 'react-icons/bi';
 
-import QodeRED from '../../assets/aside/qode-logo-RED.svg';
-import QodeWHITE from '../../assets/aside/qode-logo-White.svg';
+import QodeRED from '/assets/aside/qode-logo-RED.svg';
+import QodeWHITE from '/assets/aside/qode-logo-WHITE.svg';
 import { themes } from '../../utils/QodeThemes';
 
 function ToolBar({ isToggled, handleToggle }) {
 	return (
 		<div className='toolbar' data-toggled={isToggled ? 'true' : 'false'}>
-			<div className='toolbar--toggle toolbar--toggle__btn' onClick={handleToggle}>
+			<div
+				className='toolbar--toggle toolbar--toggle__btn'
+				onClick={handleToggle}
+			>
 				{isToggled ? (
-					<BsArrowRight fontSize={20} color='#fff'/>
+					<BsArrowRight fontSize={20} color='#fff' />
 				) : (
 					<>
 						<img height={26} src={QodeWHITE} alt='Qode Logo' />
@@ -22,10 +25,10 @@ function ToolBar({ isToggled, handleToggle }) {
 			</div>
 			<div className='toolbar--toggle toolbar--toggle__buy-now'>
 				{isToggled ? (
-					<BiSolidCart fontSize={20} color='#ee2b55'/>
+					<BiSolidCart fontSize={20} color='#ee2b55' />
 				) : (
 					<>
-						<BiSolidCart fontSize={26} color='#ee2b55'/>
+						<BiSolidCart fontSize={26} color='#ee2b55' />
 						<p className='fw-bold uppercase | clr-neutral-900'>Buy Now</p>
 					</>
 				)}

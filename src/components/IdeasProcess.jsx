@@ -1,13 +1,15 @@
 import React from 'react';
-import idea from '../assets/h3-img-5-1.jpg';
+import idea from '/assets/h3-img-5-1.jpg';
 
 function IdeasProcess() {
 	return (
-		<div className='middle-block | even-columns container | margin-block-end-5 box-shadow-5' data-block='ideas' data-type='narrow'>
-			<img src={idea} alt=''/>
-			<div
-				className='mission | flow | padding-10'
-			>
+		<div
+			className='middle-block | even-columns container | margin-block-end-5 box-shadow-5'
+			data-block='ideas'
+			data-type='narrow'
+		>
+			<img src={idea} alt='' />
+			<div className='mission | flow | padding-10'>
 				<h1 className='heading-9'>IDEAS & PROCESS</h1>
 				<h1 className='heading-1 | fs-800 clr-primary-400'>
 					Mission <span className='clr-accent-400'>Accepted</span>

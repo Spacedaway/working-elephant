@@ -1,6 +1,6 @@
 import React from 'react';
 
-import phone from '../../assets/sidearea-img-1.png';
+import phone from '/assets/sidearea-img-1.png';
 
 import IdeaBox from './IdeaBox';
 

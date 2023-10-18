@@ -1,7 +1,13 @@
+import ToTop from './components/ToTop';
 import Home from './pages/Home';
 
 function App() {
-	return <Home />;
+	return (
+		<>
+			<ToTop/>
+			<Home />
+		</>
+	);
 }
 
 export default App;

@@ -1,8 +1,8 @@
 import React from 'react';
-import logoBLUE from '../../assets/logo-Blue.png';
-import sideImage from '../../assets/sidearea-img-1.png';
-import downloadIOS from '../../assets/sidearea-img-2.png';
-import downloadAndroid from '../../assets/sidearea-img-3.png';
+import logoBLUE from '/assets/logo-BLUE.png';
+import sideImage from '/assets/sidearea-img-1.png';
+import downloadIOS from '/assets/sidearea-img-2.png';
+import downloadAndroid from '/assets/sidearea-img-3.png';
 
 function SideBar({ visible, toggleNav }) {
 	return (
