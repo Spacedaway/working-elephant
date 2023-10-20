@@ -2,6 +2,25 @@ export const navMenu = [
 	{
 		name: 'Home',
 		className: 'sub-menu',
+	},
+	{
+		name: 'Services',
+		className: 'sub-menu',
+	},
+	{
+		name: 'Blog',
+		className: 'sub-menu',
+	},
+	{
+		name: 'Contact Us',
+		className: 'sub-menu',
+	},
+];
+
+export const navMenu2 = [
+	{
+		name: 'Home',
+		className: 'sub-menu',
 		subMenu: [
 			'Main Home',
 			'Saas Home',

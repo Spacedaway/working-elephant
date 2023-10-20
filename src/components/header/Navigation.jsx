@@ -44,48 +44,62 @@ function Navigation({ styles, isScrolled }) {
 							<span>{item.name}</span>
 						</a>
 						<BiSolidChevronRight className='menu-arrow' />
-						<ul className={`${item.className}`}>
-							{item.subMenu.map((subItem, subIndex) => (
-								<li
-									className='dropdown'
-									key={subIndex}
-									onClick={() => handleClick(index, subIndex)}
-									data-active={activeItems[`${index}-${subIndex}`] ? 'true' : 'false'}
-								>
-									{typeof subItem === 'object' ? (
-										<>
+						{item.subMenu && item.subMenu.length > 0 && (
+							<ul className={`${item.className}`}>
+								{item.subMenu.map((subItem, subIndex) => (
+									<li
+										className='dropdown'
+										key={subIndex}
+										onClick={() => handleClick(index, subIndex)}
+										data-active={
+											activeItems[`${index}-${subIndex}`] ? 'true' : 'false'
+										}
+									>
+										{typeof subItem === 'object' ? (
+											<>
+												<a href='#'>
+													<span>{subItem.name}</span>
+												</a>
+												<BiSolidChevronRight />
+												{subItem.subMenu && subItem.subMenu.length > 0 && (
+													<ul className={`${subItem.className}`}>
+														{subItem.subMenu.map(
+															(subSubMenu, subSubMenuIndex) => (
+																<li
+																	key={subSubMenuIndex}
+																	onClick={() =>
+																		handleClick(
+																			index,
+																			subIndex,
+																			subSubMenuIndex
+																		)
+																	}
+																	data-active={
+																		activeItems[
+																			`${index}-${subIndex}-${subSubMenuIndex}`
+																		]
+																			? 'true'
+																			: 'false'
+																	}
+																>
+																	<a href='#'>
+																		<span>{subSubMenu}</span>
+																	</a>
+																</li>
+															)
+														)}
+													</ul>
+												)}
+											</>
+										) : (
 											<a href='#'>
-												<span>{subItem.name}</span>
+												<span>{subItem}</span>
 											</a>
-											<BiSolidChevronRight />
-											<ul className={`${subItem.className}`}>
-												{subItem.subMenu.map((subSubMenu, subSubMenuIndex) => (
-													<li
-														key={subSubMenuIndex}
-														onClick={() =>
-															handleClick(index, subIndex, subSubMenuIndex)
-														}
-														data-active={
-															activeItems[`${index}-${subIndex}-${subSubMenuIndex}`]
-																? 'true'
-																: 'false'
-														}
-													>
-														<a href='#'>
-															<span>{subSubMenu}</span>
-														</a>
-													</li>
-												))}
-											</ul>
-										</>
-									) : (
-										<a href='#'>
-											<span>{subItem}</span>
-										</a>
-									)}
-								</li>
-							))}
-						</ul>
+										)}
+									</li>
+								))}
+							</ul>
+						)}
 					</li>
 				))}
 			</ul>
