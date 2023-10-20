@@ -25,10 +25,12 @@ function ToolBar({ isToggled, handleToggle }) {
 			</div>
 			<div className='toolbar--toggle toolbar--toggle__buy-now'>
 				{isToggled ? (
-					<BiSolidCart fontSize={20} color='#ee2b55' />
+					// <BiSolidCart fontSize={20} color='#ee2b55' />
+					<BiSolidCart fontSize={20} color='black' />
 				) : (
 					<>
-						<BiSolidCart fontSize={26} color='#ee2b55' />
+						<BiSolidCart fontSize={26} color='black' />
+						{/* <BiSolidCart fontSize={26} color='#ee2b55' /> */}
 						<p className='fw-bold uppercase | clr-neutral-900'>Buy Now</p>
 					</>
 				)}
