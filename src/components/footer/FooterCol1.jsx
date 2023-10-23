@@ -8,10 +8,7 @@ import { BiLogoInstagram } from 'react-icons/bi';
 function FooterCol1() {
 	return (
 		<div className='footer-col | flow | margin-block-end-8'>
-			<h1
-				className='site-header--logo__regular | clr-neutral-000 | fs-600'
-				height={27}
-			>
+			<h1 className='clr-neutral-000 | fs-600' height={27}>
 				Working Elephant
 			</h1>
 			{/* <img src={logoWhite} alt='Footer logo' height={27} /> */}
