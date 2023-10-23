@@ -43,7 +43,7 @@ function Navigation({ styles, isScrolled }) {
 						<a href='#' data-scroll={isScrolled ? 'true' : 'false'}>
 							<span>{item.name}</span>
 						</a>
-						<BiSolidChevronRight className='menu-arrow' />
+						{/* <BiSolidChevronRight className='menu-arrow' /> */}
 						{item.subMenu && item.subMenu.length > 0 && (
 							<ul className={`${item.className}`}>
 								{item.subMenu.map((subItem, subIndex) => (
