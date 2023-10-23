@@ -20,9 +20,9 @@ function GenerateIdeas() {
 				<IdeaBox heading='Definition' percentage={36} />
 				<IdeaBox heading='Resolution' percentage={58} />
 			</div>
-			<div className='ideas--img--box'>
+			{/* <div className='ideas--img--box'>
 				<img src={phone} alt='' height={505} className='ideas--img mx-auto' />
-			</div>
+			</div> */}
 		</div>
 	);
 }

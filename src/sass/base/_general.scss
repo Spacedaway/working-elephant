@@ -17,6 +17,11 @@ a:is(:hover, :focus) {
 	color: $link-color-hover;
 }
 
+button {
+	background-color: black;
+	color: $color-neutral-000;
+}
+
 .to-top {
 	display: flex;
 	justify-content: center;

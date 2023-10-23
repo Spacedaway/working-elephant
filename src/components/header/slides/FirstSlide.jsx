@@ -3,7 +3,9 @@ import React from 'react';
 function FirstSlide() {
 	return (
 		<div className='image-slider--sliders'>
-			<span className='slide--title | heading-9'>ceo engineer <span>01</span></span>
+			<span className='slide--title | heading-9'>
+				ceo engineer <span>01</span>
+			</span>
 			<h1 className='slide--heading | heading-1'>
 				Teamwork is your key to <span>success</span>
 			</h1>
@@ -12,8 +14,12 @@ function FirstSlide() {
 				libero eaque. Cum, deserunt.
 			</p>
 			<div className='slide--buttons'>
-				<a href='#' className='button' data-type='primary'>Get Softwerk</a>
-				<a href='#' className='button' data-type='accent'>Read More</a>
+				<a href='#' className='button' data-type='primary'>
+					Get Working Elephant
+				</a>
+				<a href='#' className='button' data-type='accent'>
+					Read More
+				</a>
 			</div>
 		</div>
 	);

@@ -1,5 +1,6 @@
 import React from 'react';
 import people from '/assets/h3-img-2.jpg';
+import Calendly from './Calendly';
 
 function AmazingFuture() {
 	return (
@@ -12,9 +13,8 @@ function AmazingFuture() {
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 					eiusmod tempor incididunt ut labore.
 				</p>
-				<a data-type='accent' href='' className='button |'>
-					Read More
-				</a>
+
+				<Calendly button={true} />
 			</div>
 		</div>
 	);
