@@ -45,11 +45,7 @@
 			cursor: pointer;
 
 			& svg {
-				color: $color-accent-400;
-			}
-
-			&:is(:hover, :focus) {
-				color: $color-accent-400;
+				color: $color-neutral-000;
 			}
 		}
 	}
@@ -87,7 +83,4 @@
 
 .copyright a {
 	text-decoration: none;
-	&:is(:hover, :focus) {
-		color: $color-accent-400;
-	}
 }

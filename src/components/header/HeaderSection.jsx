@@ -15,8 +15,8 @@ function HeaderSection() {
 		<header id='header'>
 			<Navbar />
 			<ImageSlider />
-			<ToolBar isToggled={isToggled} handleToggle={handleToggle} />
-			<KickStarter/>
+			{/* <ToolBar isToggled={isToggled} handleToggle={handleToggle} /> */}
+			<KickStarter />
 		</header>
 	);
 }

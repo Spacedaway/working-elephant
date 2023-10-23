@@ -5,7 +5,7 @@ function CopyRights() {
 		<div className='bg-primary-900'>
 			<div className='container | text-center | padding-block-8'>
 				<p className='copyright | clr-neutral-000'>
-					© 2018 <a href='#'>Qode Interactive</a>, All Rights Reserved
+					© 2018 <a href='#'>Working Elephant</a>, All Rights Reserved
 				</p>
 			</div>
 		</div>

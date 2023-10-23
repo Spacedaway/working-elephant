@@ -47,11 +47,15 @@ function Navbar() {
 	return (
 		<div className='site-header' data-scroll={scrolled ? 'true' : 'false'}>
 			<div className='site-header__inner'>
-				<LogoBox isScrolled={scrolled}/>
-				<Navigation styles={toggleStyle} isScrolled={scrolled}/>
-				<IconBox isScrolled={scrolled}/>
-				<ToggleButton visible={isVisible} toggleNav={toggleNav} isScrolled={scrolled}/>
-				<SideBar visible={isSidebarVisible} toggleNav={toggleNav} />
+				<LogoBox isScrolled={scrolled} />
+				<Navigation styles={toggleStyle} isScrolled={scrolled} />
+				<IconBox isScrolled={scrolled} />
+				{/* <ToggleButton
+					visible={isVisible}
+					toggleNav={toggleNav}
+					isScrolled={scrolled}
+				/> */}
+				{/* <SideBar visible={isSidebarVisible} toggleNav={toggleNav} /> */}
 			</div>
 		</div>
 	);
