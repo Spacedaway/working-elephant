@@ -2,8 +2,8 @@
 
 header {
 	position: relative;
-	height: 100vh;
-	height: 100svh;
+	height: 130vh;
+	height: 130svh;
 
 	@include mq(medium) {
 		height: 150vh;

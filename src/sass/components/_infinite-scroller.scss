@@ -22,9 +22,14 @@
 	}
 
 	&[data-animated='true'] &__inner {
-        width: max-content;
+		width: max-content;
 		flex-wrap: nowrap;
+		pointer-events: none;
 		animation: scroll 40s linear infinite;
+
+		&:is(:hover, :focus) {
+			animation-play-state: paused;
+		}
 	}
 
 	&__inner {
@@ -38,6 +43,7 @@
 			filter: grayscale(1);
 			opacity: 0.3;
 			cursor: pointer;
+			pointer-events: auto;
 			transition: all 0.5s ease;
 
 			&:is(:focus, :hover) {

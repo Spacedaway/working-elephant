@@ -4,7 +4,7 @@ import idea from '/assets/h3-img-5-1.jpg';
 function IdeasProcess() {
 	return (
 		<div
-			className='middle-block | even-columns container | margin-block-end-5 box-shadow-5'
+			className='middle-block | even-columns container | box-shadow-5'
 			data-block='ideas'
 			data-type='narrow'
 		>

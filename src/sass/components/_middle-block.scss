@@ -4,18 +4,16 @@
 	--max-width: #{$container-max-width-narrow};
 	--grid-gap: 0;
 
-	position: absolute;
-	top: 85%;
-	left: 50%;
-	transform: translateX(-50%);
+	transform: translateY(-50%);
 	overflow: hidden;
+	width: 90%;
 	border-radius: $size-4;
+	margin-inline: auto;
 
 	&[data-block='ideas'] {
-		top: 75%;
+		transform: translateY(50%);
 
 		@include mq(medium) {
-			top: 60%;
 			grid-auto-flow: row !important;
 			grid-auto-columns: auto !important;
 		}
