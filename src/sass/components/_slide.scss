@@ -44,6 +44,7 @@
 		font-size: $font-size-500;
 		color: $color-neutral-200;
 		margin-bottom: 0.5em;
+		margin-top: 20px;
 		text-transform: capitalize;
 
 		@include animation(fadeInScale) {

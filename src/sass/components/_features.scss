@@ -1,13 +1,13 @@
 @use '../abstracts/' as *;
 
 .features {
-	padding-block: 15rem 7rem;
+	padding: 8rem 6rem;
 	place-items: center;
 }
 
 .feature-box {
 	align-self: normal;
-	--flow-spacer: 1rem;
+	// --flow-spacer: 1rem;
 	& svg {
 		font-size: $size-11;
 		color: $color-accent-400;

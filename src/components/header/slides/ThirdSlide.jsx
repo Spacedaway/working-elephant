@@ -2,23 +2,21 @@ function ThirdSlide() {
 	return (
 		<div className='image-slider--sliders'>
 			<span className='slide--title | heading-9'>
-				ceo engineer <span>03</span>
+				{/* ceo engineer <span>03</span> */}
 			</span>
 			<h1 className='slide--heading | heading-1'>
-				Always developing unique <span>solutions</span>
+				Witness the impact. See your vision come to life.
 			</h1>
 			<p className='slide--text'>
-				We are dedicated to crafting innovative solutions tailored to your
-				unique needs. Our commitment goes beyond the ordinary, ensuring your
-				projects thrive in the ever-evolving tech landscape.
+				Working Elephant builds projects that not only fulfill your goals but also make a meaningful difference for you and the world.
 			</p>
-			<div className='slide--buttons'>
+			<div className='slide--buttons hero_btn'>
 				<a href='#' className='button' data-type='primary'>
 					Get Working Elephant
 				</a>
-				<a href='#' className='button' data-type='accent'>
+				{/* <a href='#' className='button' data-type='accent'>
 					Read More
-				</a>
+				</a> */}
 			</div>
 		</div>
 	);

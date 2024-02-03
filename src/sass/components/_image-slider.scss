@@ -2,10 +2,10 @@
 
 .image-slider {
 	position: relative;
-
 	height: inherit;
-	background-image: url('/assets/background.jpg');
+	background-image: url('/assets/background-1.jpg');
 	background-size: contain;
+	// background-repeat: no-repeat;
 	background-position: center;
 
 	&--arrow {
@@ -45,4 +45,7 @@
 			transform: none;
 		}
 	}
+}
+.hero_btn{
+	margin-top: 30px;
 }

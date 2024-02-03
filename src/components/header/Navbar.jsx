@@ -5,8 +5,8 @@ import useScreenSize from '../../hooks/useScreenSize';
 import LogoBox from './LogoBox';
 import Navigation from './Navigation';
 import ToggleButton from './ToggleButton';
-import IconBox from './IconBox';
-import SideBar from './SideBar';
+// import IconBox from './IconBox';
+// import SideBar from './SideBar';
 
 function Navbar() {
 	const [isToggled, setIsToggled] = useState(false);

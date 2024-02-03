@@ -6,30 +6,30 @@ import { IoGameControllerOutline } from 'react-icons/io5';
 
 const headings = [
 	{
-		title: 'Great Design',
+		title: 'Project Strategy & Planning',
 		icon: <MdOutlineSportsBasketball />,
-		text: 'Unlock innovative strategies tailored to your needs.',
+		text: 'Help clients define project scope, goals, timelines, and budgets.',
 	},
 	{
-		title: 'Optimal Choice',
+		title: 'Market Research & Analysis',
 		icon: <MdOutlineRocketLaunch />,
-		text: 'Make the right moves with solutions designed to optimize efficiency.',
+		text: 'Conduct research to validate ideas, understand target markets, and inform project decisions.',
 	},
 	{
-		title: 'Finest Quality',
+		title: 'Project Management & Execution',
 		icon: <LiaPhotoVideoSolid />,
-		text: 'Experience unparalleled quality in our services.',
+		text: 'Oversee project implementation, manage deliverables, and track progress.',
 	},
 	{
-		title: 'Time Saving',
+		title: 'Design & Development:',
 		icon: <IoGameControllerOutline />,
-		text: 'Streamline your processes and maximize productivity with our solutions.',
+		text: 'Offer design, development, and prototyping for physical or digital products.',
 	},
 ];
 
 function Features() {
 	return (
-		<div className='features | container even-columns | text-center'>
+		<div className='features |  even-columns | text-center |'>
 			{headings.map((heading) => (
 				<FeatureBox
 					key={heading.title}

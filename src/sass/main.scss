@@ -3,6 +3,10 @@
 @use "layout";
 @use "utilities";
 @use "vendor";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 .hello{
     color: red;

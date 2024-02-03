@@ -3,7 +3,7 @@
 .middle-block {
 	--max-width: #{$container-max-width-narrow};
 	--grid-gap: 0;
-
+     height: 460px;
 	transform: translateY(-50%);
 	overflow: hidden;
 	width: 90%;
@@ -40,4 +40,14 @@
 			}
 		}
 	}
+}
+
+// new changes
+.kick_text{
+	background-color: white;
+	width: 100%;
+	height: 460px;
+	object-position: center;
+	object-position: cover;
+
 }

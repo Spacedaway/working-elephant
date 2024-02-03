@@ -1,4 +1,5 @@
 import logoWHITE from '/assets/logo-WHITE.png';
+import logo_One from '/assets/logo_preview.png';
 import logoBLUE from '/assets/logo-BLUE.png';
 
 const LogoBox = ({ isScrolled }) => {
@@ -7,17 +8,17 @@ const LogoBox = ({ isScrolled }) => {
 			className='site-header--logo'
 			data-scroll={isScrolled ? 'true' : 'false'}
 		>
-			<h1 className='site-header--logo__regular | clr-neutral-000' height={27}>
+			{/* <h1 className='site-header--logo__regular | clr-neutral-000' height={27}>
 				Working Elephant
-			</h1>
-			{/* <img
-				src={logoWHITE}
+			</h1> */}
+			<img
+				src={logo_One}
 				className='site-header--logo__regular'
 				alt='logo'
-				height={27}
-			/> */}
+				height={100}
+			/>
 			<h1 className='site-header--logo__mobile' height={27}>
-				Working Elephant
+
 			</h1>
 			{/* <img
 				src={logoBLUE}

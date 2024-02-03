@@ -12,10 +12,10 @@ function MainSection() {
 		<>
 			<Features />
 			<AmazingFuture />
-			<GenerateIdeas/>
-			<ContactUs/>
-			<OurTeam/>
-			<InfiniteScrollbar/>
+			{/* <GenerateIdeas /> */}
+			<ContactUs />
+			<OurTeam />
+			<InfiniteScrollbar />
 		</>
 	);
 }
