@@ -1,4 +1,3 @@
-import React from 'react';
 import idea from '/assets/h3-img-5-1.jpg';
 
 function IdeasProcess() {
@@ -15,8 +14,9 @@ function IdeasProcess() {
 					Mission <span className='clr-accent-400'>Accepted</span>
 				</h1>
 				<p className='fs-500 clr-neutral-300'>
-					Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do
-					eiusmod temporuis
+					At the forefront of cutting-edge solutions, we strive to transform
+					ideas into impactful realities. Our mission is to catalyze innovation,
+					shaping a future where technology meets seamless functionality.
 				</p>
 				<div className='mission--count | text-center'>
 					<div>

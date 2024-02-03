@@ -1,4 +1,3 @@
-import React from 'react';
 import { IoLocationOutline } from 'react-icons/io5';
 import { BsPinAngle } from 'react-icons/bs';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
@@ -10,7 +9,7 @@ function FooterCol2() {
 			<div className='footer-col--contact'>
 				<a>
 					<IoLocationOutline />
-					Monday to Friday: 9-20
+					Monday to Friday: 9 AM - 8 PM
 				</a>
 				<a>
 					<BsPinAngle />
@@ -18,7 +17,7 @@ function FooterCol2() {
 				</a>
 				<a>
 					<AiOutlineMail />
-					softwerk@example.com
+					info@amazingelephant.com
 				</a>
 				<a>
 					<AiOutlinePhone />+ 381 8367 545 575

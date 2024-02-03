@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { BsChevronRight } from 'react-icons/bs';
 import { BsChevronLeft } from 'react-icons/bs';
 
@@ -13,16 +13,16 @@ function ImageSlider() {
 		setCurrentIndex(newIndex);
 	};
 
-	const goToNext = () => {
+	const goToNext = useCallback(() => {
 		const isLastSlide = currentIndex === slides.length - 1;
 		const newIndex = isLastSlide ? 0 : currentIndex + 1;
 		setCurrentIndex(newIndex);
-	};
+	}, [currentIndex]);
 
 	useEffect(() => {
 		const intervalId = setInterval(goToNext, 7000);
 		return () => clearInterval(intervalId);
-	}, [currentIndex]);
+	}, [currentIndex, goToNext]);
 
 	return (
 		<div className='image-slider'>

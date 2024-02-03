@@ -1,4 +1,3 @@
-import React from 'react';
 import IdeasProcess from '../IdeasProcess';
 
 function ContactUs() {
@@ -10,7 +9,8 @@ function ContactUs() {
 				get in <span className='clr-accent-400'>touch!</span>
 			</h1>
 			<p className='fs-700 | clr-neutral-000'>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod
+				Ready to elevate your tech game? We&apos;re here to chat, brainstorm,
+				and turn your ideas into reality. Let&apos;s craft the future together.
 			</p>
 			<div className='contact-us--form'>
 				<form action=''>
@@ -20,7 +20,7 @@ function ContactUs() {
 					</button>
 				</form>
 			</div>
-			<IdeasProcess/>
+			<IdeasProcess />
 		</div>
 	);
 }

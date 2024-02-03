@@ -7,7 +7,7 @@
 	padding-top: 7rem;
 	background-image: url('/assets/h3-img-4.jpg');
 	background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
 
 	&--form {
 		& input {
@@ -23,13 +23,14 @@
 				width: 50%;
 			}
 
-            @include mq(large) {
+			@include mq(large) {
 				width: 40%;
 			}
 		}
 
 		& button {
-            padding: $size-5 $size-10;
+			padding: $size-5 $size-10;
+			margin-top: $size-4;
 			@include mq(medium) {
 				margin-left: -100px;
 			}

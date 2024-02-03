@@ -1,16 +1,17 @@
 @use '../abstracts/' as *;
 
 .features {
-    padding-block: 15rem 7rem;
-    place-items: center;
+	padding-block: 15rem 7rem;
+	place-items: center;
 }
 
 .feature-box {
-    --flow-spacer: 1rem;
+	align-self: normal;
+	--flow-spacer: 1rem;
 	& svg {
 		font-size: $size-11;
 		color: $color-accent-400;
-        cursor: pointer;
+		cursor: pointer;
 		transition: transform 0.35s cubic-bezier(0.38, 3, 0.57, 1.6);
 
 		&:is(:hover, :focus) {
@@ -18,17 +19,17 @@
 		}
 	}
 
-    &--heading{
-        color: $color-primary-400;
-        text-transform: capitalize;
-        cursor: pointer;
+	&--heading {
+		color: $color-primary-400;
+		text-transform: capitalize;
+		cursor: pointer;
 
-        &:is(:hover, :focus){
-            color: $color-accent-400;
-        }
-    }
+		&:is(:hover, :focus) {
+			color: $color-accent-400;
+		}
+	}
 
-    & p{
-        max-width: 25ch;
-    }
+	& p {
+		max-width: 25ch;
+	}
 }

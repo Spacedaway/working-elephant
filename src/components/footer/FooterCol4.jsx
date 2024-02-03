@@ -1,4 +1,3 @@
-import React from 'react';
 import { RiSendPlaneLine } from 'react-icons/ri';
 
 function FooterCol4() {
@@ -16,7 +15,7 @@ function FooterCol4() {
 				</form>
 			</div>
 			<p className='fs-500 clr-neutral-000'>
-				Get latest news and promotins direct in your inbox!
+				Get latest news and promotions direct in your inbox!
 			</p>
 		</div>
 	);

@@ -1,5 +1,3 @@
-import React from 'react';
-
 function FirstSlide() {
 	return (
 		<div className='image-slider--sliders'>
@@ -10,8 +8,9 @@ function FirstSlide() {
 				Teamwork is your key to <span>success</span>
 			</h1>
 			<p className='slide--text'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugit
-				libero eaque. Cum, deserunt.
+				In today&apos;s dynamic landscape, achieving success is a collaborative
+				effort. We believe in harnessing the power of teamwork to pave the way
+				for your triumphs.
 			</p>
 			<div className='slide--buttons'>
 				<a href='#' className='button' data-type='primary'>

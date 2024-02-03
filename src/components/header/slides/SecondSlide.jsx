@@ -1,5 +1,3 @@
-import React from 'react';
-
 function SecondSlide() {
 	return (
 		<div className='image-slider--sliders'>
@@ -10,8 +8,9 @@ function SecondSlide() {
 				Creating amazing projects in no <span>time</span>
 			</h1>
 			<p className='slide--text'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit fugit
-				libero eaque. Cum, deserunt.
+				We specialize in delivering cutting-edge projects with speed and
+				precision, leveraging our expertise to create solutions that redefine
+				possibilities.
 			</p>
 			<div className='slide--buttons'>
 				<a href='#' className='button' data-type='primary'>

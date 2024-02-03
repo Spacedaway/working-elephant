@@ -1,5 +1,4 @@
-import React from 'react';
-import logoWhite from '/assets/logo-WHITE.png';
+// import logoWhite from '/assets/logo-WHITE.png';
 import { BiLogoFacebook } from 'react-icons/bi';
 import { BiLogoTwitter } from 'react-icons/bi';
 import { BiLogoPinterestAlt } from 'react-icons/bi';
@@ -13,8 +12,7 @@ function FooterCol1() {
 			</h1>
 			{/* <img src={logoWhite} alt='Footer logo' height={27} /> */}
 			<p className='fs-500 clr-neutral-000'>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt
+				Empowering businesses through innovative tech solutions.
 			</p>
 			<div className='footer-col--socials'>
 				<a href='#'>

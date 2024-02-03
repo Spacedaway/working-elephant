@@ -73,6 +73,10 @@
 		}
 	}
 
+	&--description {
+		max-width: 30ch;
+	}
+
 	&--socials {
 		display: flex;
 		gap: $size-4;
@@ -106,7 +110,7 @@
 	&--container {
 		@include mq(large) {
 			--auto-grid-min-size: 200px;
-			--grid-gap: $size-6;
+			--grid-gap: $size-10;
 		}
 	}
 }
