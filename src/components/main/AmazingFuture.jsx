@@ -3,7 +3,7 @@ import Calendly from './Calendly';
 
 function AmazingFuture() {
 	return (
-		<div className='even-columns | bg-neutral-100' style={{ '--grid-gap': 0 }}>
+		<div className='even-columns | bg-neutral-100' style={{ '--grid-gap': 0 }} id="About">
 			<img src={people} alt='' />
 			<div className='flow | padding-10' style={{ alignSelf: 'center' }}>
 				<h1 className='heading-9'>About Us</h1>

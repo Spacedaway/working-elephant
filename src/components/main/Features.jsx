@@ -29,7 +29,7 @@ const headings = [
 
 function Features() {
 	return (
-		<div className='features |  even-columns | text-center |'>
+		<div className='features |  even-columns | text-center |' id="Services">
 			{headings.map((heading) => (
 				<FeatureBox
 					key={heading.title}

@@ -4,15 +4,15 @@ export const navMenu = [
 		className: 'sub-menu',
 	},
 	{
+		name: 'About',
+		className: 'sub-menu',
+	},
+	{
 		name: 'Services',
 		className: 'sub-menu',
 	},
 	{
-		name: 'Blog',
-		className: 'sub-menu',
-	},
-	{
-		name: 'Contact Us',
+		name: 'Contact',
 		className: 'sub-menu',
 	},
 ];

@@ -6,7 +6,7 @@ import { navMenu } from '../../utils/NavMenuItems';
 function Navigation({ styles, isScrolled }) {
 	const [activeItems, setActiveItems] = useState({});
 
-	const handleClick = (index, subIndex = null, subSubMenuIndex = null) => {
+	const handleClick = (index, subIndex = null, subSubMenuIndex = null, Name = null) => {
 		setActiveItems((prevState) => {
 			const key = `${index}-${subIndex}-${subSubMenuIndex}`;
 
@@ -28,6 +28,10 @@ function Navigation({ styles, isScrolled }) {
 				};
 			}
 		});
+		const element = document.getElementById(Name);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth", block: "start" });
+		}
 	};
 
 	return (
@@ -37,10 +41,10 @@ function Navigation({ styles, isScrolled }) {
 					<li
 						className='dropdown dropdown__initial'
 						key={index}
-						onClick={() => handleClick(index)}
+						onClick={() => handleClick(index, null, null, null, item.name)}
 						data-active={activeItems[index] ? 'true' : 'false'}
 					>
-						<a href='#' data-scroll={isScrolled ? 'true' : 'false'}>
+						<a href={`#${item.name}`} data-scroll={isScrolled ? 'true' : 'false'}>
 							<span>{item.name}</span>
 						</a>
 						{/* <BiSolidChevronRight className='menu-arrow' /> */}

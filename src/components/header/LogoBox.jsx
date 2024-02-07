@@ -5,7 +5,7 @@ import logoBLUE from '/assets/logo-BLUE.png';
 const LogoBox = ({ isScrolled }) => {
 	return (
 		<div
-			className='site-header--logo'
+			className='site-header--logo' id='Home'
 			data-scroll={isScrolled ? 'true' : 'false'}
 		>
 			{/* <h1 className='site-header--logo__regular | clr-neutral-000' height={27}>
@@ -15,7 +15,7 @@ const LogoBox = ({ isScrolled }) => {
 				src={logo_One}
 				className='site-header--logo__regular'
 				alt='logo'
-				height={100}
+				height={150}
 			/>
 			<h1 className='site-header--logo__mobile' height={27}>
 
