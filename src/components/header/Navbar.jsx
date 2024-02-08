@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import useScreenSize from '../../hooks/useScreenSize';
 
@@ -48,7 +48,11 @@ function Navbar() {
 		<div className='site-header' data-scroll={scrolled ? 'true' : 'false'}>
 			<div className='site-header__inner'>
 				<LogoBox isScrolled={scrolled} />
-				<Navigation styles={toggleStyle} isScrolled={scrolled} />
+				<Navigation
+					setIsToggled={setIsToggled}
+					styles={toggleStyle}
+					isScrolled={scrolled}
+				/>
 				{/* <IconBox isScrolled={scrolled} /> */}
 				<ToggleButton
 					visible={isVisible}

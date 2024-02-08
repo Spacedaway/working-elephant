@@ -15,11 +15,11 @@ function FooterCol2() {
 					<BsPinAngle />
 					Saturday to Sunday: closed
 				</a>
-				<a>
+				<a href='mailto:support@workingelephant.com'>
 					<AiOutlineMail />
 					support@workingelephant.com
 				</a>
-				<a>
+				<a href='call:+17139666266'>
 					<AiOutlinePhone />+ 171 3966 6266
 				</a>
 			</div>

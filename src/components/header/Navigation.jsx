@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BiSolidChevronRight } from 'react-icons/bi';
 
 import { navMenu } from '../../utils/NavMenuItems';
 
-function Navigation({ styles, isScrolled }) {
+function Navigation({ styles, isScrolled, setIsToggled }) {
 	const [activeItems, setActiveItems] = useState({});
 
-	const handleClick = (index, subIndex = null, subSubMenuIndex = null, Name = null) => {
+	const handleClick = (
+		index,
+		subIndex = null,
+		subSubMenuIndex = null,
+		Name = null
+	) => {
 		setActiveItems((prevState) => {
-			const key = `${index}-${subIndex}-${subSubMenuIndex}`;
-
 			if (!subIndex && !subSubMenuIndex) {
 				return {
 					...prevState,
@@ -28,9 +31,10 @@ function Navigation({ styles, isScrolled }) {
 				};
 			}
 		});
+		setIsToggled(false);
 		const element = document.getElementById(Name);
 		if (element) {
-			element.scrollIntoView({ behavior: "smooth", block: "start" });
+			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
 		}
 	};
 
@@ -44,7 +48,10 @@ function Navigation({ styles, isScrolled }) {
 						onClick={() => handleClick(index, null, null, null, item.name)}
 						data-active={activeItems[index] ? 'true' : 'false'}
 					>
-						<a href={`#${item.name}`} data-scroll={isScrolled ? 'true' : 'false'}>
+						<a
+							href={`#${item.name}`}
+							data-scroll={isScrolled ? 'true' : 'false'}
+						>
 							<span>{item.name}</span>
 						</a>
 						{/* <BiSolidChevronRight className='menu-arrow' /> */}
