@@ -101,12 +101,6 @@
 }
 
 .team {
-	padding-block: 30rem 7rem;
-
-	@include mq(large) {
-		padding-block: 15rem 7rem;
-	}
-
 	&--container {
 		@include mq(large) {
 			--auto-grid-min-size: 200px;

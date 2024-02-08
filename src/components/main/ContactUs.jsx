@@ -1,4 +1,4 @@
-import IdeasProcess from '../IdeasProcess';
+// import IdeasProcess from '../IdeasProcess';
 
 function ContactUs() {
 	return (
@@ -7,10 +7,11 @@ function ContactUs() {
 			<h1 className='heading-1 | fs-900 clr-neutral-000'>
 				{' '}
 				{/* get in <span className='clr-accent-400'>touch!</span> */}
-				Let's turn your project dream into a reality.
+				Let&apos;s turn your project dream into a reality.
 			</h1>
 			<p className='fs-700 | clr-neutral-000'>
-				Make it easy for potential clients to get in touch. Offer multiple contact options like phone, email, and contact form.
+				Make it easy for potential clients to get in touch. Offer multiple
+				contact options like phone, email, and contact form.
 			</p>
 			<div className='contact-us--form'>
 				<form action=''>

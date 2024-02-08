@@ -19,10 +19,10 @@ function ImageSlider() {
 		setCurrentIndex(newIndex);
 	}, [currentIndex]);
 
-	useEffect(() => {
-		const intervalId = setInterval(goToNext, 7000);
-		return () => clearInterval(intervalId);
-	}, [currentIndex, goToNext]);
+	// useEffect(() => {
+	// 	const intervalId = setInterval(goToNext, 7000);
+	// 	return () => clearInterval(intervalId);
+	// }, [currentIndex, goToNext]);
 
 	return (
 		<div className='image-slider'>

@@ -37,7 +37,7 @@ const teamMembers = [
 
 function OurTeam() {
 	return (
-		<div className='team | bg-neutral-100'>
+		<div className='team | section | bg-neutral-100'>
 			<div
 				className='team--container | container grid-auto-fit'
 				data-type='wide'
