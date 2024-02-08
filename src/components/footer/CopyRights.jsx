@@ -3,7 +3,7 @@ function CopyRights() {
 		<div className='bg-primary-900'>
 			<div className='container | text-center | padding-block-8'>
 				<p className='copyright | clr-neutral-000'>
-					© 2023 <a href='#'>Working Elephant</a>, All Rights Reserved
+					© 2024 <a href='#'>Working Elephant</a>, All Rights Reserved
 				</p>
 			</div>
 		</div>

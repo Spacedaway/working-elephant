@@ -15,7 +15,7 @@ function MainSection() {
 			{/* <GenerateIdeas /> */}
 			<ContactUs />
 			<OurTeam />
-			<InfiniteScrollbar />
+			{/* <InfiniteScrollbar /> */}
 		</>
 	);
 }

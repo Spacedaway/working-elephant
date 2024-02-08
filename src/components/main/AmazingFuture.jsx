@@ -15,14 +15,14 @@ function AmazingFuture() {
 					ideas take flight and land with a resounding <b>"wow</b>!"
 				</p>
 
-				<h3>Our story:</h3>
+				{/* <h3>Our story:</h3>
 
 				<p>
 					It all started with a napkin sketch and a shared dream of making the impossible possible. We saw a world where people weren't limited by resources, expertise, or the fear of taking that first step. We envisioned a place where dreams could be nurtured, shaped, and finally, brought to life. And so, Working Elephant was born.
 					What makes us different?
 					We're not just consultants, we're your project co-pilots. We climb aboard with you, sharing the excitement, navigating the bumps, and celebrating every milestone. We bring a unique blend of:
 
-				</p>
+				</p> */}
 
 				<Calendly button={true} />
 			</div>

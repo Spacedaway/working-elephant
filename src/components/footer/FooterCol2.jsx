@@ -17,10 +17,10 @@ function FooterCol2() {
 				</a>
 				<a>
 					<AiOutlineMail />
-					info@amazingelephant.com
+					support@workingelephant.com
 				</a>
 				<a>
-					<AiOutlinePhone />+ 381 8367 545 575
+					<AiOutlinePhone />+ 171 3966 6266
 				</a>
 			</div>
 		</div>

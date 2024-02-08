@@ -1,3 +1,5 @@
+import Calendly from "../../main/Calendly";
+
 function ThirdSlide() {
 	return (
 		<div className='image-slider--sliders'>
@@ -11,9 +13,10 @@ function ThirdSlide() {
 				Working Elephant builds projects that not only fulfill your goals but also make a meaningful difference for you and the world.
 			</p>
 			<div className='slide--buttons hero_btn'>
-				<a href='#' className='button' data-type='primary'>
+				<Calendly button={true} />
+				{/* <a href='#' className='button' data-type='primary'>
 					Get Working Elephant
-				</a>
+				</a> */}
 				{/* <a href='#' className='button' data-type='accent'>
 					Read More
 				</a> */}

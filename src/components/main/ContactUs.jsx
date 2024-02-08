@@ -20,7 +20,7 @@ function ContactUs() {
 					</button>
 				</form>
 			</div>
-			<IdeasProcess />
+			{/* <IdeasProcess /> */}
 		</div>
 	);
 }

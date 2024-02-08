@@ -1,3 +1,5 @@
+import Calendly from "../../main/Calendly";
+
 function SecondSlide() {
 	return (
 		<div className='image-slider--sliders'>
@@ -11,9 +13,10 @@ function SecondSlide() {
 				Our passionate team of experts becomes your trusted partner, working alongside you every step of the way to ensure your vision thrives.
 			</p>
 			<div className='slide--buttons hero_btn'>
-				<a href='#' className='button' data-type='primary'>
+				<Calendly button={true} />
+				{/* <a href='#' className='button' data-type='primary'>
 					Get Working Elephant
-				</a>
+				</a> */}
 				{/* <a href='#' className='button' data-type='accent'>
 					Read More
 				</a> */}
