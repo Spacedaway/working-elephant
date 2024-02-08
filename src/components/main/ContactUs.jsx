@@ -2,7 +2,7 @@
 
 function ContactUs() {
 	return (
-		<div className='contact-us | flow | text-center' id='Contact'>
+		<div className='contact-us | flow section | text-center' id='Contact'>
 			<h1 className='heading-9 | clr-neutral-000'>Contact us</h1>
 			<h1 className='heading-1 | fs-900 clr-neutral-000'>
 				{' '}
