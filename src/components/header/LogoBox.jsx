@@ -9,7 +9,10 @@ const LogoBox = ({ isScrolled }) => {
 			data-scroll={isScrolled ? 'true' : 'false'}
 		>
 			<picture>
-				<source media='(min-width: 992px)' srcSet={logoWHITE} />
+				<source
+					media='(min-width: 992px)'
+					srcSet={`${isScrolled ? logoBLACK : logoWHITE}`}
+				/>
 				<img height={150} src={logoBLACK} alt='logo image' />
 			</picture>
 		</div>

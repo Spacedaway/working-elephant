@@ -42,33 +42,6 @@ header {
 		}
 	}
 
-	&--logo {
-		&__regular {
-			display: none;
-		}
-
-		@include mq(large) {
-			&__regular {
-				display: block;
-			}
-			&__mobile {
-				display: none;
-			}
-		}
-
-		&[data-scroll='true'] &__regular {
-			@include mq(large) {
-				display: none;
-			}
-		}
-
-		&[data-scroll='true'] &__mobile {
-			@include mq(large) {
-				display: block;
-			}
-		}
-	}
-
 	&[data-scroll='true'] {
 		@include mq(large) {
 			background-color: white;
